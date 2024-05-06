@@ -1,0 +1,336 @@
+* {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 41px;
+  text-align: center;
+}
+a {
+  color: #27b9c2;
+}
+h4,
+p {
+  color: #9fa3a7;
+}
+.container {
+  height: 220vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas:
+    "first second third third"
+    "first second third third"
+    "fourth fiveth sixth seventh"
+    "fourth fiveth sixth seventh"
+    "eighth ninth ninth seventh"
+    "eighth ninth ninth seventh"
+    "tenth eleventh twelveth twelveth";
+}
+.container div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 8%;
+}
+
+.item1 {
+  grid-area: first;
+}
+.item1 h4 {
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 12px;
+}
+.item1 h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.item2 {
+  grid-area: second;
+}
+.item2 img {
+  width: 85%;
+  position: relative;
+  bottom: -25px;
+}
+.item3 {
+  background-color: #f7f8f9;
+  grid-area: third;
+  text-align: center;
+}
+.item4 {
+  background-color: #f05638;
+  grid-area: fourth;
+  text-align: center;
+  color: #f7f8f9;
+}
+.item4 img {
+  width: 110%;
+}
+.item4 a {
+  color: #ffc80a;
+  text-decoration: none;
+}
+.item5 {
+  grid-area: fiveth;
+}
+.item5 img {
+  width: 160%;
+  position: relative;
+  left: -94%;
+  bottom: -9%;
+}
+.item6 {
+  grid-area: sixth;
+}
+.item6 a {
+  text-decoration: none;
+}
+.item6 p {
+  line-height: 30px;
+}
+.item7 {
+  background-color: #8f76bc;
+  grid-area: seventh;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: #f7f8f9;
+}
+.item7 .circle {
+  background-color: #8166b0;
+  height: 360px;
+  width: 360px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  top: 10%;
+}
+.item7 img {
+  width: 100%;
+  z-index: 2;
+}
+.item7 h6 img {
+  width: 9.3%;
+  margin-right: 5px;
+}
+.item7 h6 {
+  letter-spacing: 2px;
+  z-index: 2;
+  padding: 10px 5px;
+  background-color: #8f76bc;
+  border-radius: 60px;
+  width: 40%;
+  margin: 20px auto;
+}
+.item7 a {
+  padding: 14px 2px;
+  margin-top: 30px;
+  border-radius: 50px;
+  background-color: #ffc80a;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  width: 50%;
+  text-decoration: none;
+}
+.item7 h4 {
+  margin: 0;
+  z-index: 2;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 30px;
+}
+.item8 {
+  grid-area: eighth;
+  align-items: center;
+  position: relative;
+}
+.item8 img {
+  width: 80%;
+  position: relative;
+  left: -20px;
+  top: -30px;
+}
+.item9 {
+  background-color: #93b6b7;
+  grid-area: ninth;
+  background-image: url(../images/UX.png);
+  background-size: 80%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.item9 img {
+  width: 100%;
+  left: -10%;
+  position: relative;
+  bottom: -15%;
+}
+.item9 p {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #fa684f;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.item10 {
+  background-color: #38d5f4;
+  grid-area: tenth;
+  align-items: center;
+  color: #f7f8f9;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.item10 h3 {
+  font-size: 20px;
+  line-height: 32px;
+}
+.item10 .circle {
+  align-items: center;
+  background-color: #35cfed;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  position: absolute;
+}
+.item10 .circle img {
+  width: 30%;
+}
+.item11 {
+  background-color: #f7f8f9;
+  grid-area: eleventh;
+  align-items: center;
+  text-align: center;
+}
+.item11 p {
+  position: static;
+  background-color: #7bc424;
+  color: #fff;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.container .item12 {
+  background-color: #2c2c2c;
+  grid-area: twelveth;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0 4%;
+  color: #f7f8f9;
+}
+.item12 img {
+  width: 42%;
+}
+.item12 h3 {
+  width: 40%;
+  font-size: 23px;
+}
+@media (max-width: 775px) {
+  .container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-areas:
+      "third third"
+      "third third"
+      "first second"
+      "first second"
+      "fourth eighth"
+      "fourth eighth"
+      "fiveth sixth"
+      "fiveth sixth"
+      "ninth seventh"
+      "ninth seventh"
+      "tenth seventh"
+      "tenth seventh"
+      "elevnth elevnth"
+      "twelveth twelveth"
+      "twelveth twelveth";
+  }
+  .container div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 8%;
+  }
+
+  .item1 {
+    grid-area: first;
+  }
+  .item2 {
+    grid-area: second;
+  }
+  .item2 img {
+    bottom: 0;
+  }
+  .item3 {
+    grid-area: third;
+  }
+  .item4 {
+    grid-area: fourth;
+  }
+  .item5 {
+    grid-area: fiveth;
+  }
+  .item6 {
+    grid-area: sixth;
+  }
+  .item7 {
+    grid-area: seventh;
+  }
+  .item7 h2,
+  .item7 .text,
+  .item7 a {
+    z-index: 2;
+  }
+  .item7 .circle {
+    top: 6%;
+  }
+  .item8 {
+    grid-area: eighth;
+  }
+  .item9 {
+    grid-area: ninth;
+  }
+  .item9 img {
+    bottom: -96px;
+  }
+  .item10 {
+    grid-area: tenth;
+  }
+  .item11 {
+    grid-area: elevnth;
+  }
+  .item12 {
+    grid-area: twelveth;
+  }
+}
